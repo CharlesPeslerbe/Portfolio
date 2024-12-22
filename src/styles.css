@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+
+    /* Colors */
+    --primary-color: #D73F00;
+    --dark-color:#1D1D1D;
+    --background: #131313;
+    --secondary-color: #232323;
+    --text-color: #ffffff;
+    --hover-color: #444444;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: var(--background);
+}

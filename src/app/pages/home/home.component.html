@@ -1,0 +1,14 @@
+<div class="bento-box-wrapper">
+  <app-bento-box
+    *ngFor="let box of bentoBoxes"
+    class="bento-box"
+    [ngClass]="getBentoBoxClass(box)"
+    [title]="box.title"
+    [subtitle]="box.subtitle"
+    [items]="box.items"
+    [background]="box.background"
+    [w]="box.w"
+    [h]="box.h"
+  ></app-bento-box>
+</div>
+

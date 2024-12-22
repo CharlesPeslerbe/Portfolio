@@ -1,1 +1,26 @@
-<p>navigation-bar works!</p>
+<nav class="nav-container">
+  <ul class="nav-list">
+    <li class="nav-item" 
+        routerLink="/" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </li>
+    <li class="nav-item" 
+        routerLink="/projects" 
+        routerLinkActive="active">
+      Projects
+    </li>
+    <li class="nav-item" 
+        routerLink="/about-me" 
+        routerLinkActive="active">
+      About me
+    </li>
+    <li class="nav-item" 
+      routerLink="/others" 
+      routerLinkActive="active">
+    Others
+    </li>
+
+  </ul>
+</nav>

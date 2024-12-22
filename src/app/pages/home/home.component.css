@@ -1,0 +1,32 @@
+:host {
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+.bento-box-wrapper {
+    display: grid;
+    padding: 16px;
+    grid-template-columns: repeat(3, 400px);
+    grid-row: 400px;
+    gap: 0px 48px;
+  }
+
+
+.bento-box {
+    grid-column: span 1; /* Par défaut, occupe une colonne */
+    grid-row: span 1; /* Par défaut, occupe une ligne */
+}
+
+
+.bento-box.wide {
+    grid-column: span 2; /* Occupe deux colonnes */
+}
+
+.bento-box.tall {
+    grid-row: span 2; /* Occupe deux lignes */
+}
+
+.bento-box.large {
+    grid-column: span 2; /* Occupe deux colonnes */
+    grid-row: span 2; /* Occupe deux lignes */
+}
