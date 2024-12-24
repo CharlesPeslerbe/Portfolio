@@ -5,7 +5,7 @@
   color: var(--dark-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   margin: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.8s, box-shadow 0.6s, color 0.2s, font-weight 0.1s;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -33,6 +33,10 @@
   margin: 0;
 }
 
+.header:hover {
+  cursor:default;
+}
+
   
 .content {
   margin: 0;
@@ -54,7 +58,7 @@
   border-radius: 10px;
   max-width: 100%;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.6s;
   margin-bottom: 20px;
   font-weight: normal;
 }
@@ -63,6 +67,7 @@
   background: rgba(255, 255, 255, 0.0);
   transform: scale(1.10);
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .item:active {
@@ -92,4 +97,5 @@ a {
 .item span:hover {
   color: white;
   cursor: pointer;
+  transition: color 0.3s;
 }

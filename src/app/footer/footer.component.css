@@ -1,0 +1,80 @@
+/* Footer Global Styles */
+.footer {
+    background-color: var(--background); /* Couleur de fond */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 8px solid var(--dark-color); /* Ligne de séparation */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 5px;
+  }
+  
+  .logo .highlight {
+    color: var(--primary-color); /* Couleur de FAWZIUIUX */
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-nav li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav li a:hover {
+    color: var(--primary-color); /* Couleur hover */
+    text-decoration: underline;
+  }
+  
+  .social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: orange;
+  }
+  
+  .footer-credits {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .footer-credits .highlight {
+    color: var(--primary-color);
+  }
+  

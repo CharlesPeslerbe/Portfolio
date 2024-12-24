@@ -17,6 +17,12 @@ export class SearchBarComponent {
     this.search.emit(this.query);
   }
 
+  
+  // Méthode appelée lorsque l'utilisateur appuie sur Entrée
+  onEnter() {
+    this.search.emit(this.query); // Émet la requête actuelle
+  }
+
   // Méthode pour effacer la recherche
   clearSearch() {
     this.query = '';

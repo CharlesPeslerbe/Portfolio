@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet} from '@angular/router';
 import { NavigationBarComponent } from "./navigation-bar/navigation-bar.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, NavigationBarComponent, RouterOutlet, SearchBarComponent],
+  imports: [CommonModule, NavigationBarComponent, RouterOutlet, SearchBarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

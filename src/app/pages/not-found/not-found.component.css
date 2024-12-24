@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 50px;
     color: white;
+    margin-bottom: 200px;
   }
   
   .not-found h1 {
@@ -16,6 +17,8 @@
   }
 
 .not-found a:hover{
-    color: var(--primary-color);
+  transition: color 0.4s;
+  color: var(--primary-color);
+  /* text-decoration: underline; */
 }
   
