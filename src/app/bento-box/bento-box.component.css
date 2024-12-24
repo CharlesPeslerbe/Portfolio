@@ -13,7 +13,9 @@
 
 .bento-box:hover {
   /* transform: translateY(-5px); */
-  box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.5);
+  color: white;
+  font-weight: bold;
 }
   
 .header {
@@ -29,16 +31,17 @@
   
 .header p {
   margin: 0;
-  color: var(--dark-color);
 }
+
   
 .content {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   text-decoration: none;
+  padding: 20px;
 }
   
 .item {
@@ -47,12 +50,13 @@
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
-  padding:8px;
+  padding:16px;
   border-radius: 10px;
   max-width: 100%;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
   margin-bottom: 20px;
+  font-weight: normal;
 }
   
 .item:hover {
@@ -60,13 +64,18 @@
   transform: scale(1.10);
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.8);
 }
+
+.item:active {
+  transform: scale(1.00);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.8);
+}
   
 .item img {
   max-width: 100%; /* Limite la largeur à celle du parent */
-  max-height: 80px; /* Fixe une hauteur maximale raisonnable */
+  max-height: 85px; /* Fixe une hauteur maximale raisonnable */
   width: auto; /* Garde les proportions */
   height: auto; /* Garde les proportions */
-  margin:8px;
+  margin: 8px;
   object-fit: contain; /* S'assure que l'image s'adapte bien à son conteneur */
 }
   
@@ -78,4 +87,9 @@
 a {
   text-decoration: none; /* Supprime le soulignement */
   color: inherit; /* Hérite de la couleur du parent ou définissez une couleur spécifique */
+}
+
+.item span:hover {
+  color: white;
+  cursor: pointer;
 }

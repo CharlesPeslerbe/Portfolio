@@ -1,3 +1,5 @@
 <app-navigation-bar></app-navigation-bar>
 
-<router-outlet/>
+<app-search-bar (search)="onSearch($event)"></app-search-bar>
+
+<router-outlet></router-outlet>
